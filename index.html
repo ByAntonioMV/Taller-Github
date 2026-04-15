@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12va Jornada de Informatica - Control de Versiones con GitHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header con logos -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logos">
+                <div class="logo-container">
+                    <img src="Escudo con Letras.png" alt="Universidad de la Canada" class="logo">
+                    <span class="logo-label">Universidad de la Canada</span>
+                </div>
+                <div class="header-divider"></div>
+                <div class="logo-container">
+                    <img src="FB_IMG_1646537087331.png" alt="Carrera de Informatica" class="logo">
+                    <span class="logo-label">Licenciatura en Informatica</span>
+                </div>
+            </div>
+            <div class="header-badge">
+                <span class="badge-jornada">12va Jornada de Informatica</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seccion de Bienvenida -->
+        <section id="bienvenida" class="welcome-section">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="btn-close"></span>
+                        <span class="btn-minimize"></span>
+                        <span class="btn-maximize"></span>
+                    </div>
+                    <span class="terminal-title">~/12va-jornada-informatica</span>
+                </div>
+                <div class="terminal-body">
+                    <p class="typing-line">
+                        <span class="prompt">$</span> <span class="command">git</span> clone "Control-de-Versiones-con-GitHub"
+                    </p>
+                    <div class="welcome-badge-row">
+                        <span class="taller-chip">Taller Oficial</span>
+                        <span class="jornada-chip">12va Jornada de Informatica</span>
+                    </div>
+                    <h1 class="welcome-title">
+                        Control de Versiones<br>con <span class="highlight-green">GitHub</span>
+                    </h1>
+                    <p class="welcome-tagline">
+                        <span class="comment">// De Cero al Mundo Laboral</span>
+                    </p>
+                    <div class="code-block">
+                        <p><span class="keyword">const</span> <span class="variable">taller</span> = {</p>
+                        <p>&nbsp;&nbsp;<span class="property">nombre</span>: <span class="string">"Control de Versiones con GitHub"</span>,</p>
+                        <p>&nbsp;&nbsp;<span class="property">nivel</span>: <span class="string">"De Cero al Mundo Laboral"</span>,</p>
+                        <p>&nbsp;&nbsp;<span class="property">jornada</span>: <span class="string">"12va Jornada de Informatica"</span>,</p>
+                        <p>&nbsp;&nbsp;<span class="property">universidad</span>: <span class="string">"Universidad de la Canada"</span></p>
+                        <p>};</p>
+                    </div>
+                    <p class="welcome-message">
+                        Bienvenidos a este taller donde aprenderemos a dominar Git y GitHub
+                        desde los fundamentos hasta las practicas usadas en el entorno profesional.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion de Participantes -->
+        <section id="participantes" class="participants-section">
+            <h2 class="section-title">
+                <span class="tag">&lt;</span>Participantes<span class="tag">/&gt;</span>
+            </h2>
+            <p class="section-subtitle">$ git log --oneline --all --participants</p>
+
+            <div class="table-container">
+                <table class="participants-table">
+                    <thead>
+                        <tr>
+                            <th>
+                                <span class="th-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                        <circle cx="8.5" cy="8.5" r="1.5"/>
+                                        <polyline points="21 15 16 10 5 21"/>
+                                    </svg>
+                                </span>
+                                Imagen
+                            </th>
+                            <th>
+                                <span class="th-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                        <circle cx="12" cy="7" r="4"/>
+                                    </svg>
+                                </span>
+                                Nombre
+                            </th>
+                            <th>
+                                <span class="th-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                    </svg>
+                                </span>
+                                Comentario
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Imagen">
+                                <img src="tux.jpeg" alt="IMG" class="participant-img" onerror="this.src='avatar-default.svg'">
+                            </td>
+                            <td data-label="Nombre">
+                                <span class="participant-name">Antonio Alain Moreno Vazquez</span>
+                            </td>
+                            <td data-label="Comentario">
+                                <span class="participant-comment">Espero que aprendan con este taller</span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-footer-hint">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="12" y1="8" x2="12" y2="12"/>
+                    <line x1="12" y1="16" x2="12.01" y2="16"/>
+                </svg>
+                <span>Los participantes son agregados directamente en el codigo HTML por el instructor.</span>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p class="footer-title">
+                    <span class="comment">/*</span> 12va Jornada de Informatica <span class="comment">*/</span>
+                </p>
+                <p class="footer-sub">Universidad de la Canada &mdash; Ingenieria en Informatica</p>
+            </div>
+            <div class="footer-right">
+                <p class="footer-taller">Control de Versiones con GitHub</p>
+                <p class="footer-tagline">
+                    <span class="accent-text">De Cero al Mundo Laboral</span>
+                </p>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    github.com
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="footer-code">$ git commit -m "12va Jornada de Informatica — Universidad de la Canada"</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
